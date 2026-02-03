@@ -1,0 +1,132 @@
+body {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1f2328;
+    line-height: 1.5;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    color: #636c76;
+    max-width: 600px;
+    margin: 0 auto 24px;
+}
+
+/* (Flexbox) */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card.highlight {
+    border: 2px solid #0969da;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #0969da;
+    color: white;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #636c76;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #d0d7de;
+    margin-bottom: 12px;
+}
+
+.btn-primary { width: auto; background: #21262d; color: white; padding: 12px 24px; }
+.btn-dark { background: #21262d; color: white; border: none; }
+.btn-outline { background: white; color: #0969da; }
+
+.btn-group { display: flex; gap: 8px; }
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.features li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1f883d;
+}
+
+.add-ons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px;
+    max-width: 1200px;
+    margin: 30px auto 60px;
+    padding: 0 20px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .pricing-grid, .add-ons-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+}

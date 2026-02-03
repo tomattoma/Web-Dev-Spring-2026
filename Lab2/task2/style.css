@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color:  #0c1014;
+}
+
+.insta-page {
+    display: flex;
+    height: 100vh;
+}
+
+.main-img {
+    width: 600px; /* Твой размер */
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto; /* Центрируем и даем отступ сверху от текста */
+    /* border: 2px solid red;  <-- можешь оставить для теста, но потом убери */
+}
+
+.image-stack {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Дополнительно центрируем саму обертку картинки */
+}
+
+/* left side*/
+.hero {
+    flex: 1.2; 
+    background-color: #0c1014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;  
+    text-align: center;      
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Это выровняет текст и картинку по одной оси */
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+/* Красивый розовый акцент для текста */
+.accent {
+    color: #fd006f; 
+}
+
+/* Правая часть */
+.auth {
+    flex: 1;
+    background-color: #152127; /* Глубокий темный цвет фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card {
+    width: 500px;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
+.login-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Инпуты как на скрине */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #0a131a; /* Еще темнее фона */
+    border: 1px solid #363636;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box; /* Чтобы паддинги не раздували инпут */
+}
+
+/* Кнопка входа */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #004a7c; /* Приглушенный синий */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot {
+    display: block;
+    margin: 20px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Кнопки внизу с рамкой */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #363636;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.meta-brand {
+    margin-top: 30px;
+    opacity: 0.6;
+    font-size: 14px;
+}
