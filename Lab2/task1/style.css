@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
-    display: block;
-    margin: 0;
 }
 .image{
     /*margin-right:200px;*/
@@ -40,8 +38,8 @@ body {
 .login-card {
     background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* окргуляем углы*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /*ставим тении*/
     width: 350px;
     text-align: center;
 }
@@ -51,7 +49,7 @@ input {
     padding: 14px;
     margin-bottom: 12px;
     border: 1px solid #dddfe2;
-    border-radius: 6px;
+    border-radius: 6px;  /* окргуляем углы*/
     font-size: 17px;
 }
 
@@ -62,7 +60,7 @@ input {
     color: white;
     border: none;
     padding: 14px;
-    border-radius: 6px;
+    border-radius: 6px; /* окргуляем углы*/
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;

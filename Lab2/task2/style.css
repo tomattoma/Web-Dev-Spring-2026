@@ -122,3 +122,26 @@ input {
     opacity: 0.6;
     font-size: 14px;
 }
+
+.logo{
+
+    margin-right: 700px;
+    width:60px;
+}
+.footer {
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    color: gray;
+    text-decoration: None;
+    font-size: 12px;
+    text-align: center;
+}
+.footer a{
+    color: gray;
+    text-decoration: None;
+    margin: 8px;
+    font-size: 12px;
+}
+.footer-links {
+    margin: 10px;
+}
