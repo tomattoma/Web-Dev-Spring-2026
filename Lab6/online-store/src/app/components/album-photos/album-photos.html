@@ -1,0 +1,15 @@
+<div class="gallery-container">
+  <div class="gallery-header">
+    <button (click)="goBack()" class="btn-back">← Back to Album</button>
+    <h2>Gallery: Album #{{albumId}}</h2>
+  </div>
+
+  <div class="photo-grid">
+    <div class="photo-card" *ngFor="let photo of photos">
+      <div class="photo-wrapper">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title">
+      </div>
+      <p class="photo-title">{{photo.title}}</p>
+    </div>
+  </div>
+</div>

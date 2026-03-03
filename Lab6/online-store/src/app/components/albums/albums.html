@@ -1,0 +1,13 @@
+<div class="albums-container">
+  <h1>Photo Albums</h1>
+  
+  <div class="album-grid">
+    <div *ngFor="let album of albums" class="album-card">
+      <div class="album-content" [routerLink]="['/albums', album.id]">
+        <span class="album-number">#{{album.id}}</span>
+        <p class="album-title">{{album.title}}</p>
+      </div>
+      <button class="delete-btn" (click)="deleteAlbum(album.id)">Delete</button>
+    </div>
+  </div>
+</div>

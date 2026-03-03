@@ -1,0 +1,80 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  min-height: 80vh;
+}
+
+.detail-card {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.id-badge {
+  background: #007bff;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.info-group {
+  margin-bottom: 20px;
+}
+
+.info-group label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.edit-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.card-footer {
+  display: grid;
+  gap: 10px;
+  padding: 0 30px 30px;
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.btn-save { background: #28a745; color: white; }
+.btn-view { background: #007bff; color: white; }
+.btn-back { background: #6c757d; color: white; }
+.btn:hover { opacity: 0.9; }

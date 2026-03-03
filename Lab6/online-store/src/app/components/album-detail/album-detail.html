@@ -1,0 +1,25 @@
+<div class="detail-container">
+  <div class="detail-card" *ngIf="loaded">
+    <div class="card-header">
+      <h2>Album Details <span class="id-badge">#{{album.id}}</span></h2>
+    </div>
+    
+    <div class="card-body">
+      <div class="info-group">
+        <label>User ID</label>
+        <p>{{album.userId}}</p>
+      </div>
+
+      <div class="info-group">
+        <label>Title</label>
+        <input [(ngModel)]="album.title" class="edit-input" placeholder="Enter new title...">
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <button (click)="save()" class="btn btn-save">Save Changes</button>
+      <button [routerLink]="['/albums', album.id, 'photos']" class="btn btn-view">View Photos</button>
+      <button (click)="goBack()" class="btn btn-back">Return to List</button>
+    </div>
+  </div>
+</div>
